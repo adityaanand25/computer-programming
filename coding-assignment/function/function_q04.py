@@ -4,6 +4,6 @@ def search_record(admission_number):
     with open('data.csv', 'r') as file:
         reader = csv.reader(file)
         for row in reader:
-            if row[0] == admission_number:  # Assuming admission number is in the first column
+            if row[0] == admission_number:  
                 return row
     return "Record not found."
